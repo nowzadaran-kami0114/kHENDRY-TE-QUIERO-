@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel con Indicadores</title>
+    <style>
+     body{
+          background-color: black;
+     }
+        .carrusel {
+            width: 1000px;
+            overflow: hidden;
+            position: center;
+        }
+        .imagenes {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .imagen {
+            min-width: 1000px;
+        }
+        .indicadores {
+            text-align: center;
+            margin-top: 10px;
+          
+        }
+        .indicador {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            
+        }
+        .activo {
+            background-color: black;
+        }
+        
+        nav a{
+          color: white;
+          font-size: 30px;
+          text-decoration: none;
+          padding: 10px;
+     
+        }
+    </style>
+</head>
+<body>
+     <center>
+     <nav>
+          <a href="http://">E-NAKA</a>
+          <a href="http://">Nosotros</a>
+          <a href="http://">Menú</a>
+          <a href="http://">Contactos</a>
+     </nav>
+</center>
+<br>
+     <center>
+    <div class="carrusel">
+        <div class="imagenes">
+            <img class="imagen" src="New IMG/Bulgogi.png" alt="Imagen 1">
+            <img class="imagen" src="New IMG/Chana Masala.png" alt="Imagen 2">
+            <img class="imagen" src="New IMG/Dim sum.png" alt="Imagen 3">
+            <img class="imagen" src="New IMG/arroz12.jpg" alt="Imagen 1">
+        </div>
+    </div>
+</center>
+    <div class="indicadores">
+        <span class="indicador" onclick="irA(0)"></span>
+        <span class="indicador" onclick="irA(1)"></span>
+        <span class="indicador" onclick="irA(2)"></span>
+        <span class="indicador" onclick="irA(3)"></span>
+    </div>
+
+    <script>
+        let indice = 0;
+        const indicadores = document.querySelectorAll('.indicador');
+
+        function irA(n) {
+            const imagenes = document.querySelector('.imagenes');
+            indice = n;
+            imagenes.style.transform = 'translateX(' + (-indice * 100) + '%)';
+            actualizarIndicadores();
+        }
+
+        function actualizarIndicadores() {
+            indicadores.forEach((indicador, i) => {
+                indicador.classList.toggle('activo', i === indice);
+            });
+        }
+    </script>
+</body>
+</html>

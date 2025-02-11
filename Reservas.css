@@ -1,0 +1,119 @@
+body {
+     background-image: url('img-carusel/e\ naka\ \(1\).png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     transform: translateX(-25px); 
+ }
+
+.nav-links {
+     list-style: none; 
+     margin: 0;
+     padding: 0;
+     display: flex; 
+     gap: 10px; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+ }
+
+ .nav-links li a {
+     text-decoration: none; 
+     color: white; 
+     font-size: 24px;
+     padding: 10px;
+     
+ }
+ h1{
+   color: #a17a12;              
+    font-style: oblique;
+ }
+ .cuadro {
+    background-color: #0a0a0a;
+    width: 350px; 
+    height: 240px; 
+    border-radius: 6px;
+    border: 0.2px solid rgb(61, 60, 60);
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+    align-items: center; 
+    margin: 0 auto; 
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center; 
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    text-align: center; 
+  }
+  
+  label {
+    margin-bottom: 10px; 
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%; 
+    font-size: 14px; 
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #a17a12;
+  }
+  
+  button {
+    padding: 8px 15px;
+    width: 120px; 
+    background-color: #333;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 15px; 
+  }
+  
+  button:hover {
+    background-color: #d6bf3d;
+  }
+  
+
+ footer {
+  
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #be9015; 
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-top: 10px;
+}

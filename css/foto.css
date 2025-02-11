@@ -1,0 +1,30 @@
+.carrusel {
+     width: 1000px;
+     overflow: hidden;
+     position: center;
+ }
+ .imagenes {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
+ .imagen {
+     min-width: 1000px;
+ }
+ .indicadores {
+     text-align: center;
+     margin-top: 10px;
+   
+ }
+ .indicador {
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     background-color: gray;
+     border-radius: 50%;
+     margin: 0 5px;
+     cursor: pointer;
+     
+ }
+ .activo {
+     background-color: black;
+ }
