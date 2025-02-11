@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": ".git"
+		},
+		{
+			"path": ".vscode"
+		},
+		{
+			"path": "Bebidas"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "Fuertes"
+		},
+		{
+			"path": "img-carusel"
+		},
+		{
+			"path": "img-reservas"
+		},
+		{
+			"path": "NEW IMG"
+		},
+		{
+			"path": "OTRAS COSAS"
+		},
+		{
+			"path": "Postre"
+		},
+		{
+			"path": "seguridad.css"
+		},
+		{
+			"path": "video"
+		}
+	]
+}
